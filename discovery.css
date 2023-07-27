@@ -2,8 +2,8 @@
   padding: 0;
   margin: 0;
 }
-.discovery_background{
-    position: relative;
+.discovery_background {
+  position: relative;
 }
 .discovery_background img {
   width: 100%;
@@ -12,31 +12,95 @@
   background-position: center;
 }
 .blur_overlay_dis {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    backdrop-filter: blur(0.8px);
-  }
-  .blur_overlay_dis::after {
-    content: "";
-    position: absolute;
-    top: 0px;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    background: linear-gradient(
-      180deg,
-      #fccfba 0%,
-      rgba(252, 207, 186, 0.88) 39.58%,
-      rgba(252, 207, 186, 0.78) 67.19%,
-      rgba(252, 207, 186, 0.2) 100%
-    );
-  }
-  .discovery_logo img {
-    position: absolute;
-    top: 6.7rem;
-    left: 7rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  backdrop-filter: blur(0.8px);
+}
+.blur_overlay_dis::after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(
+    180deg,
+    #fccfba 0%,
+    rgba(252, 207, 186, 0.88) 39.58%,
+    rgba(252, 207, 186, 0.78) 67.19%,
+    rgba(252, 207, 186, 0.2) 100%
+  );
+}
+.discovery_logo img {
+  position: absolute;
+  top: 6.7rem;
+  left: 7rem;
+  z-index: 1;
+}
+
+.slider{
+    position: relative;
+    top: -32rem;
     z-index: 1;
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, 0.55);
+    backdrop-filter: blur(7.5px);
+    height: 27rem;
+    width: 80%;
+    padding: 2px;
+    margin: 0 auto;
+    flex-shrink: 0;
+    
+}
+.slides{
+    display: flex;
+    transition: transform 0.5s ease;
+}
+.slide{
+    flex: 0 0 500px;
+    text-align: center;
+}
+.slide img{
+    max-width: 100%;
+    margin-right: 9.5rem;
+    margin-top: 2rem;
+    height: auto;
+}
+.slide h3{
+    text-align: center;
+    width: 50%;
+    margin-top: 0.7rem;
+    margin-left: 2.7rem;
+    font-family: "Roboto", sans-serif;
+}
+.slide p{
+    text-align: center;
+    margin-top: 1rem;
+    width: 50%;
+    margin-left: 2.5rem;
+    font-family: "Roboto", sans-serif;
+}
+.circles {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    position: absolute;
+    z-index: 1;
+    top: 38rem;
+    left: 12rem;
+  }
+.circle {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #ccc;
+    margin: 0 5px;
+    cursor: pointer;
+  }
+  
+  .circle.active {
+    background-color:rgba(149, 28, 63, 1);
   }
