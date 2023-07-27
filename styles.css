@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+SA+Beginner:wght@500&family=Roboto:wght@300;400&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+.home_background{
+    position: relative;
+}
+.home_background img{
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+.blur_overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    backdrop-filter: blur(1px);
+   
+}
+.blur_overlay::after{
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(180deg, #FCCFBA 0%, rgba(252, 207, 186, 0.88) 39.58%, rgba(252, 207, 186, 0.78) 67.19%, rgba(252, 207, 186, 0.20) 100%);
+    } 
+.logo img{
+    position: absolute;
+    top: 14.5rem;
+    left: 7rem;
+    z-index: 1;
+}
+.logo p{
+    position: absolute;
+    top: 25rem;
+    left: 2.7rem;
+    width: 82%;
+    z-index: 1;
+    font-family: 'Roboto', sans-serif;
+    line-height:1.2rem;
+    text-align:center ;
+}
