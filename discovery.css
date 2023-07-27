@@ -42,9 +42,11 @@
 }
 
 .slider{
-    position: relative;
-    top: -32rem;
+    position: fixed;
+    top: 14rem;
+    left: 3rem;
     z-index: 1;
+    border-radius: 8px;
     overflow: hidden;
     background-color: rgba(255, 255, 255, 0.55);
     backdrop-filter: blur(7.5px);
@@ -89,7 +91,7 @@
     margin-top: 10px;
     position: absolute;
     z-index: 1;
-    top: 38rem;
+    top: 36rem;
     left: 12rem;
   }
 .circle {
