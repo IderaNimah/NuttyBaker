@@ -44,4 +44,4 @@ function prevSlide() {
   goToSlide(currentSlide);
 }
 
-slideInterval = setInterval(nextSlide, 5000); // Start the slide interval
+slideInterval = setInterval(nextSlide, 5000); 

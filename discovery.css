@@ -50,7 +50,7 @@
     overflow: hidden;
     background-color: rgba(255, 255, 255, 0.55);
     backdrop-filter: blur(7.5px);
-    height: 27rem;
+    height: 28.5rem;
     width: 80%;
     padding: 2px;
     margin: 0 auto;
@@ -101,8 +101,18 @@
     background-color: #ccc;
     margin: 0 5px;
     cursor: pointer;
-  }
+}
   
-  .circle.active {
+.circle.active {
     background-color:rgba(149, 28, 63, 1);
-  }
+}
+
+.next_page{
+    margin-top: 2.2rem;
+    margin-left: 2.5rem;
+    font-family: "Roboto", sans-serif;
+}
+h3 a{
+    text-decoration: none;
+    color:rgba(149, 28, 63, 1);
+}
