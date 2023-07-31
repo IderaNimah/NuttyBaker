@@ -7,12 +7,35 @@
     <link rel="stylesheet" href="./login.css" />
   </head>
   <body>
-    <div class="login_logo">
-      <img src="./Images/Logo2.svg" alt="logo" />
-    </div>
     <div class="login_background">
       <img src="./Images/Img2.png" alt="login_background" />
       <div class="blur_overlay_login"></div>
     </div>
+    <div class="login">
+      <h3>Login</h3>
+      <div class="">
+        <form>
+          <input
+            type="text"
+            id="username"
+            class="input-field"
+            placeholder="gmail address"
+          />
+
+          <input
+            type="password"
+            id="password"
+            class="input-field"
+            placeholder="password"
+            
+          />
+          <h4>Forgot password?</h4>
+
+          <button type="submit">Login</button>
+        </form>
+        <p>Don't have an account? <span><a href="create.html">Create Account</a></span></p>
+      </div>
+    </div>
+    <script src="login.js"></script>
   </body>
 </html>
