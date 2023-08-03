@@ -34,4 +34,77 @@
       rgba(252, 207, 186, 0.2) 100%
     );
   }
+  .login {
+    position: absolute;
+    top: 10rem;
+    left: 3.3rem;
+    background-color: rgba(255, 255, 255, 0.55);
+    backdrop-filter: blur(7.5px);
+    border-radius: 8px;
+    height: 28.5rem;
+    width: 75%;
+    padding: 2px;
+    margin: 0 auto;
+    flex-shrink: 0;
+  }
+  .login h3{
+      margin-top: 3rem;
+      margin-left: 5.3rem;
+      font-size: 25px;
+      color: #951C3F;
+      font-family: "Roboto", sans-serif;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+   
+  }
+  .input_container{
+    position: relative;
+  }
+  .input-field {
+    border: none;
+    background-color: transparent;
+    width: 84%;
+    margin-left: 1.5rem;
+    margin-top: 2.5rem;
+    border-bottom: 2px solid #ccc;
+    outline: none;
+    padding: 2px 0;
+    transition: border-bottom-color 0.3s ease-in-out;
+  }
+  .input-field:focus {
+    border-bottom-color:#951C3F;
+  }
+  .input-field::placeholder{
+    position: absolute;
+    top: -3px;
+  }
+  .checkbox-container {
+    margin-left: 1.5rem;
+    margin-top: 1rem;
+    font-family: "Roboto", sans-serif;
+  }
+  p{
+    margin-left: 4rem;
+    font-size: 0.8rem;
+    margin-top: 1rem;
+    color:rgba(0, 0, 0, 0.25);
+    font-family: "Roboto", sans-serif;
+  }
+  span a{
+    text-decoration: none;
+    color: #951C3F;
+  }
   
+  button{
+    margin-top: 1.8rem;
+    width: 84%;
+    margin-left: 1.5rem;
+    height: 3rem;
+    border-radius: 0.4rem;
+    background-color: #951C3F;
+    border: none;
+    color: white;
+    cursor: pointer;
+  }
