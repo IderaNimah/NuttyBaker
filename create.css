@@ -59,10 +59,9 @@
     flex-direction: column;
    
   }
-  .input_container{
-    position: relative;
-  }
+  
   .input-field {
+    position: relative;
     border: none;
     background-color: transparent;
     width: 84%;
@@ -80,10 +79,17 @@
     position: absolute;
     top: -3px;
   }
+  i{
+    margin-top: 39px;
+    margin-left: -2rem;
+  }
   .checkbox-container {
     margin-left: 1.5rem;
     margin-top: 1rem;
     font-family: "Roboto", sans-serif;
+  }
+  label{
+    font-size: 0.7rem;
   }
   p{
     margin-left: 4rem;
