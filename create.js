@@ -1,15 +1,23 @@
+"use strict";
+const passwordOne = document.getElementById('passwordOne');
+const passwordTwo = document.getElementById('passwordTwo');
 
-document.getElementById('eyeIcon').addEventListener('click', function() {
-  const passwordInput = document.getElementById('passwordInput');
-  const icon = document.getElementById('eyeIcon');
-  
-  if (passwordInput.type === 'text') {
-    passwordInput.type = 'password';
-    icon.classList.remove('fa-eye-slash');
-    icon.classList.add('fa-eye');
-  } else {
-    passwordInput.type = 'text';
-    icon.classList.remove('fa-eye');
-    icon.classList.add('fa-eye-slash');
-  }
-});
+const eyeIconOne = document.getElementById('eyeIconOne');
+const eyeIconTwo = document.getElementById('eyeIconTwo');
+
+function togglePasswordVisibility(){
+    const isTextType = passwordOne.type === 'text';
+
+    passwordOne.type = isTextType?'password':'text';
+    passwordTwo.type = isTextType?'password':'text';
+
+    eyeIconOne.classList.toggle('fa-eye', isTextType);
+    eyeIconOne.classList.toggle('fa-eye-slash',!isTextType);
+    
+    
+    eyeIconTwo.classList.toggle('fa-eye', isTextType);
+    eyeIconTwo.classList.toggle('fa-eye-slash',!isTextType);
+    
+}
+eyeIconOne.addEventListener('click', togglePasswordVisibility);
+eyeIconTwo.addEventListener('click', togglePasswordVisibility);
