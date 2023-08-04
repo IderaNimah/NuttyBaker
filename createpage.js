@@ -1,6 +1,7 @@
 "use strict";
 const passwordOne = document.getElementById('passwordOne');
 const passwordTwo = document.getElementById('passwordTwo');
+console.log(passwordOne);
 
 const eyeIconOne = document.getElementById('eyeIconOne');
 const eyeIconTwo = document.getElementById('eyeIconTwo');
