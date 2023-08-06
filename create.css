@@ -102,7 +102,7 @@ form div input:focus {
 
 form div #eye {
   position: absolute;
-  color: #951c3f;
+  color:#951c3f;
   top: 60%;
   left: 260px;
   right: 35px;
@@ -119,6 +119,7 @@ form div #eye i {
 }
 form div label {
     font-size: 12px;
+    margin-left: 0.8rem;
   }
   
 .checkbox-container {
