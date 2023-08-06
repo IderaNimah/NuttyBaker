@@ -49,7 +49,7 @@
 }
 .login h3 {
   margin-top: 3rem;
-  margin-left: 5.3rem;
+  margin-left: 4.3rem;
   font-size: 25px;
   color: #951c3f;
   font-family: "Roboto", sans-serif;
@@ -90,14 +90,6 @@ form div label {
   margin-bottom: 5px;
 }
 
-form div input {
-  width: 80%;
-  padding: 5px;
-  font-size: 16px;
-  border-radius: 5px;
-  border: 1px solid #ccc;
-}
-
 form div button[type="submit"] {
   width: 80%;
   padding: 10px;
@@ -116,6 +108,7 @@ form div input:focus {
 
 form div #eye {
   position: absolute;
+  color: #951c3f;
   top: 60%;
   left: 260px;
   right: 35px;
