@@ -84,12 +84,6 @@ form div {
   position: relative;
 }
 
-form div label {
-  font-size: 16px;
-  display: block;
-  margin-bottom: 5px;
-}
-
 form div button[type="submit"] {
   width: 80%;
   padding: 10px;
@@ -123,14 +117,18 @@ form div #eye i {
   width: 20px;
   height: 20px;
 }
-
+form div label {
+    font-size: 12px;
+  }
+  
 .checkbox-container {
+    display: flex;
   margin-left: 1.5rem;
   margin-top: 1rem;
   font-family: "Roboto", sans-serif;
 }
 label {
-  font-size: 0.7rem;
+  font-size: 0.4rem;
 }
 p {
   margin-left: 4rem;
