@@ -123,6 +123,10 @@ h3 a{
     top: 12.5rem;
     left: 2.4rem;
   }
+  .slide{
+    flex: 0 0 496px;
+    text-align: center;
+  }
   .first_slider{
     margin-left: 2.8rem;
   }
