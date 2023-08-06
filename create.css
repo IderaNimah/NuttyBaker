@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+SA+Beginner:wght@500&family=Roboto:wght@300;400&display=swap');
 * {
   padding: 0;
   margin: 0;
@@ -49,10 +50,11 @@
 }
 .login h3 {
   margin-top: 3rem;
-  margin-left: 4.3rem;
+  margin-left: 3.8rem;
   font-size: 25px;
   color: #951c3f;
   font-family: "Roboto", sans-serif;
+  letter-spacing: 1px;
 }
 form {
   display: flex;
@@ -123,7 +125,7 @@ form div label {
   }
   
 .checkbox-container {
-    display: flex;
+  display: flex;
   margin-left: 1.5rem;
   margin-top: 1rem;
   font-family: "Roboto", sans-serif;
@@ -153,4 +155,18 @@ span a {
   border: none;
   color: white;
   cursor: pointer;
+}
+@media screen and (max-width:418px){
+  form div #eye {
+    position: absolute;
+    color:#951c3f;
+    top: 60%;
+    left: 250px;
+    right: 35px;
+    padding: 0.7rem;
+    transform: translateY(-29%);
+    cursor: pointer;
+    border: none;
+    background: transparent;
+  }
 }
