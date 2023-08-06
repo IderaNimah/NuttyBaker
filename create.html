@@ -9,7 +9,6 @@
       src="https://kit.fontawesome.com/1b5581c73c.js"
       crossorigin="anonymous"
     ></script>
-   
   </head>
   <body>
     <div class="create_background">
@@ -27,26 +26,31 @@
               class="input-field"
               placeholder="gmail address"
             />
-           
           </div>
-          <div class="input_two">
+
+          <div>
             <input
               type="password"
+              name="passwordOne"
+              placeholder="password"
               id="passwordOne"
               class="input-field"
-              placeholder="password"
             />
-            <i class="fa-solid fa-eye-slash" id="eyeIconOne"></i>
-            
+            <button type="button" id="eye" class="eyeOne">
+              <i class="far fa-eye"></i>
+            </button>
           </div>
-          <div class="input_three">
+          <div>
             <input
               type="password"
+              name="passwordTwo"
+              placeholder="confirm password"
               id="passwordTwo"
               class="input-field"
-              placeholder="confirm password"
             />
-            <i class="fa-solid fa-eye-slash" id="eyeIconTwo"></i>
+            <button type="button" id="eye" class="eyeTwo">
+              <i class="far fa-eye"></i>
+            </button>
           </div>
           <div class="checkbox-container">
             <input
@@ -58,7 +62,7 @@
               >I agree to terms and conditions</label
             >
           </div>
-          <button type="submit">Create Account</button>
+          <button type="submit" class="createButton">Create Account</button>
         </form>
         <p>
           Already have an account? <span><a href="login.html">Login</a></span>

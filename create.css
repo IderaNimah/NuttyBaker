@@ -1,118 +1,164 @@
 * {
-    padding: 0;
-    margin: 0;
-  }
-  .create_background {
-    position: relative;
-  }
-  .create_background img {
-    width: 100%;
-    height: 100vh;
-    background-size: cover;
-    background-position: center;
-  }
-  .blur_overlay_create{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    backdrop-filter: blur(0.8px);
-  }
-  .blur_overlay_create::after {
-    content: "";
-    position: absolute;
-    top: 0px;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    background: linear-gradient(
-      180deg,
-      #fccfba 0%,
-      rgba(252, 207, 186, 0.88) 39.58%,
-      rgba(252, 207, 186, 0.78) 67.19%,
-      rgba(252, 207, 186, 0.2) 100%
-    );
-  }
-  .login {
-    position: absolute;
-    top: 10rem;
-    left: 3.3rem;
-    background-color: rgba(255, 255, 255, 0.55);
-    backdrop-filter: blur(7.5px);
-    border-radius: 8px;
-    height: 28.5rem;
-    width: 75%;
-    padding: 2px;
-    margin: 0 auto;
-    flex-shrink: 0;
-  }
-  .login h3{
-      margin-top: 3rem;
-      margin-left: 5.3rem;
-      font-size: 25px;
-      color: #951C3F;
-      font-family: "Roboto", sans-serif;
-  }
-  form {
-    display: flex;
-    flex-direction: column;
-   
-  }
-  
-  .input-field {
-    position: relative;
-    border: none;
-    background-color: transparent;
-    width: 84%;
-    margin-left: 1.5rem;
-    margin-top: 2.5rem;
-    border-bottom: 2px solid #ccc;
-    outline: none;
-    padding: 2px 0;
-    transition: border-bottom-color 0.3s ease-in-out;
-  }
-  .input-field:focus {
-    border-bottom-color:#951C3F;
-  }
-  .input-field::placeholder{
-    position: absolute;
-    top: -3px;
-  }
-  i{
-    margin-top: 39px;
-    margin-left: -2rem;
-    color: #951C3F;
-    cursor: pointer;
-  }
-  .checkbox-container {
-    margin-left: 1.5rem;
-    margin-top: 1rem;
-    font-family: "Roboto", sans-serif;
-  }
-  label{
-    font-size: 0.7rem;
-  }
-  p{
-    margin-left: 4rem;
-    font-size: 0.8rem;
-    margin-top: 1rem;
-    color:rgba(0, 0, 0, 0.25);
-    font-family: "Roboto", sans-serif;
-  }
-  span a{
-    text-decoration: none;
-    color: #951C3F;
-  }
-  
-  button{
-    margin-top: 1.8rem;
-    width: 84%;
-    margin-left: 1.5rem;
-    height: 3rem;
-    border-radius: 0.4rem;
-    background-color: #951C3F;
-    border: none;
-    color: white;
-    cursor: pointer;
-  }
+  padding: 0;
+  margin: 0;
+}
+.create_background {
+  position: relative;
+}
+.create_background img {
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+.blur_overlay_create {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  backdrop-filter: blur(0.8px);
+}
+.blur_overlay_create::after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(
+    180deg,
+    #fccfba 0%,
+    rgba(252, 207, 186, 0.88) 39.58%,
+    rgba(252, 207, 186, 0.78) 67.19%,
+    rgba(252, 207, 186, 0.2) 100%
+  );
+}
+.login {
+  position: absolute;
+  top: 10rem;
+  left: 3.3rem;
+  background-color: rgba(255, 255, 255, 0.55);
+  backdrop-filter: blur(7.5px);
+  border-radius: 8px;
+  height: 28.5rem;
+  width: 75%;
+  padding: 2px;
+  margin: 0 auto;
+  flex-shrink: 0;
+}
+.login h3 {
+  margin-top: 3rem;
+  margin-left: 5.3rem;
+  font-size: 25px;
+  color: #951c3f;
+  font-family: "Roboto", sans-serif;
+}
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-field {
+  position: relative;
+  border: none;
+  background-color: transparent;
+  width: 84%;
+  margin-left: 1.5rem;
+  margin-top: 2.5rem;
+  border-bottom: 2px solid #ccc;
+  outline: none;
+  padding: 2px 0;
+  transition: border-bottom-color 0.3s ease-in-out;
+}
+.input-field:focus {
+  border-bottom-color: #951c3f;
+}
+.input-field::placeholder {
+  position: absolute;
+  top: -3px;
+}
+
+form div {
+  margin-bottom: -3px;
+  position: relative;
+}
+
+form div label {
+  font-size: 16px;
+  display: block;
+  margin-bottom: 5px;
+}
+
+form div input {
+  width: 80%;
+  padding: 5px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+form div button[type="submit"] {
+  width: 80%;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: none;
+  background: #0088ff;
+  color: #fff;
+  cursor: pointer;
+}
+
+form div input:focus {
+  outline: none;
+  border-color: #818a85;
+}
+
+form div #eye {
+  position: absolute;
+  top: 60%;
+  left: 260px;
+  right: 35px;
+  padding: 0.7rem;
+  transform: translateY(-29%);
+  cursor: pointer;
+  border: none;
+  background: transparent;
+}
+
+form div #eye i {
+  width: 20px;
+  height: 20px;
+}
+
+.checkbox-container {
+  margin-left: 1.5rem;
+  margin-top: 1rem;
+  font-family: "Roboto", sans-serif;
+}
+label {
+  font-size: 0.7rem;
+}
+p {
+  margin-left: 4rem;
+  font-size: 0.8rem;
+  margin-top: 1rem;
+  color: rgba(0, 0, 0, 0.25);
+  font-family: "Roboto", sans-serif;
+}
+span a {
+  text-decoration: none;
+  color: #951c3f;
+}
+
+.createButton {
+  margin-top: 1.8rem;
+  width: 84%;
+  margin-left: 1.5rem;
+  height: 3rem;
+  border-radius: 0.4rem;
+  background-color: #951c3f;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
