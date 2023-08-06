@@ -115,6 +115,30 @@ h3 a{
     text-decoration: none;
     color:rgba(149, 28, 63, 1);
 }
+@media screen and (max-width:412px){
+  .discovery_logo img{
+    left: 6.45rem;
+  }
+  .slider{
+    top: 12.5rem;
+    left: 2.4rem;
+  }
+  .first_slider{
+    margin-left: 2.8rem;
+  }
+  .second_slider{
+    margin-left: 2.9rem;
+  }
+  .third_slider{
+    margin-left: 2.7rem;
+  }
+  .circles{
+    left: 11rem;
+  }
+  .circles h3{
+    margin-left: -0.7rem;
+  }
+}
 @media screen and (max-width:393px){
   .discovery_logo img{
     left: 6.2rem;
