@@ -121,14 +121,14 @@ font-family: "Roboto", sans-serif;
 @media screen and (max-width:360px){
   .logo img{
     position: absolute;
-    top: 13rem;
+    top: 12rem;
     left: 5rem;
     z-index: 1;
   }
   .logo p {
     position: absolute;
     color: rgba(51, 51, 51, 0.85);
-    top: 23rem;
+    top: 22rem;
     left: 1.15rem;
     width: 89%;
     z-index: 1;
@@ -138,6 +138,6 @@ font-family: "Roboto", sans-serif;
   }
   .get_started_container{
     left: 8rem;
-    top: 31rem;
+    top: 30rem;
   }
 }
