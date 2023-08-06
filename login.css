@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+SA+Beginner:wght@500&family=Roboto:wght@300;400&display=swap');
 * {
   padding: 0;
   margin: 0;
@@ -51,6 +52,7 @@
     margin-top: 3rem;
     margin-left: 7.9rem;
     font-size: 25px;
+    font-weight: bold;
     color: #951C3F;
     font-family: "Roboto", sans-serif;
 }
@@ -108,4 +110,25 @@ p{
 span a{
   text-decoration: none;
   color: #951C3F;
+}
+@media screen and (max-width:414px){
+  h4{
+    margin-left: 12.3rem;
+    margin-top: 0.7rem;
+    font-size: 10px;
+    color: #951C3F;
+    font-family: "Roboto", sans-serif;
+  }
+}
+@media screen and (max-width:393px){
+  h4{
+    margin-left: 11.5rem;
+  }
+  p{
+    color:rgba(0, 0, 0, 0.25);
+    font-family: "Roboto", sans-serif;
+    margin-left: 2.15rem;
+    margin-top: 1rem;
+    font-size: 13px;
+  }
 }
