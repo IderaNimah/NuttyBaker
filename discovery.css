@@ -75,7 +75,6 @@
     text-align: center;
     width: 50%;
     margin-top: 0.7rem;
-    margin-left: 2.7rem;
     font-family: "Roboto", sans-serif;
 }
 .slide p{
@@ -115,4 +114,31 @@
 h3 a{
     text-decoration: none;
     color:rgba(149, 28, 63, 1);
+}
+@media screen and (max-width:393px){
+  .discovery_logo img{
+    left: 6.2rem;
+  }
+  .slider{
+    top: 12.5rem;
+    left: 2.4rem;
+  }
+  .slide img{
+    margin-right: 11.5rem;
+  }
+  .first_slider{
+    margin-left: 2.1rem;
+  }
+  .second_slider{
+    margin-left: 2.2rem;
+  }
+  .third_slider{
+    margin-left: 2rem;
+  }
+  .circles{
+    left: 11rem;
+  }
+  .circles h3{
+    margin-left: -1rem;
+  }
 }
